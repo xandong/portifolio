@@ -35,12 +35,13 @@ nav a{
     color: var(--cor-violet);
     text-decoration: none;
     padding: 8px 16px;
-    box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.04);
     border-radius: 12px 0;
 
 }
 nav a:hover{
     transition-duration: 0.3s;
+    box-shadow:none;
     color: var(--cor-yellow-gold);
 }
 h1{
@@ -49,14 +50,16 @@ h1{
 h2{
     font-size: 2em;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6{
-
+    text-decoration: none;
 }
+
 ul{
     font-weight: 500;
     display: flex;
@@ -70,44 +73,45 @@ hr{
 nav{
     margin-right: 48px;
 }
-
-
+button:hover{
+    cursor: pointer;
+}
 
 /* Especificos */
 header{
     margin: auto;
-    height: 120px;
+    height: 16vh;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    box-shadow: 0 0 48px rgb(0, 0, 0, 0.05);
 }
 .header{
-    height: 50px;
+    width: 80%;
 }
 #Camada_1{
     height: 50px;
-    padding: 16px;
-    padding-left: 48px;
+    margin-left: 48px;
     position: inherit;
-    border-radius: 0 50px 50px 0;
     fill: var(--cor-violet);
 }
 #Camada_1:hover{
     transition-duration: 0.2s;
-    background-color:var(--cor-yellow-gold);
-    fill: whitesmoke;
+    fill: var(--cor-yellow-gold);
+    border-bottom: 4px solid var(--cor-yellow-gold);    
 }
 nav a{
     margin-top: 32px;
     padding: 8px 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 nav a:hover{
     transition-duration: 0.4s;
     background-color: #f9c013;
     color: whitesmoke;
-
 }
 
 
@@ -118,9 +122,11 @@ main{
 #sec-intro{
     min-width: 100%;
     width: 60%;
-    height: 80vh;
-    margin: auto;
-    margin-top: 120px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 #sec-intro a{
@@ -136,7 +142,7 @@ main{
 #sec-ctt h2{
     font-size: 2.5em;
     font-weight: 700;
-    padding: 48px 0px;
+    padding: 48px 0px 80px;
 }
 #sec-intro a{
     box-shadow: none;
@@ -166,8 +172,6 @@ main{
     
 }
 
-
-
 #sec-proj{
     height: 120vh;
     background-color: #0077b6;
@@ -183,7 +187,6 @@ main{
     display: flex;
 
 }
-
 #proj-01,
 #proj-02,
 #proj-03{
@@ -191,29 +194,28 @@ main{
     width: 300px;
     background-color: #e2e7ff;
     border-radius: 16px;
-    border: 8px solid #0077b6;
     transition-duration: 0.4s;
 }
-
 #proj-01:hover,
 #proj-02:hover,
 #proj-03:hover{
     transition-duration: 0.4s;
     border-radius: 16px;
-    border: 8px solid rgb(1, 37, 157, 0.8);
+    box-shadow: 24px 18px 32px rgb(0, 0, 0, 0.2);
+    height: 460px;
 }
 
-
+.proj-title{
+    margin: 16px auto;
+}
 #pic-proj-01,
 #pic-proj-02,
 #pic-proj-03{
-    margin: 24px auto 0;
+    margin: 16px auto;
     height: 200px;
     width: 300px;
-    background-color: #fe00b3;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     transition-duration: 0.4s;
-    
 }
 #pic-proj-01:hover,
 #pic-proj-02:hover,
@@ -221,27 +223,46 @@ main{
     transition-duration: 0.4s;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-
-
 .proj-in{   
     color: #000741;
 }
 
-.proj-title{
-    margin: 8px auto;
-}
 .proj-desc{
-    display: flex;
     margin: auto;
-    width: 250px;
+    width: 200px;
     height: 100px;
-    background-color: #000528;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.html,
+.css,
+.js{
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: ease 300ms;
+}
+.html:hover{
+    background-color: #E96228;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.css:hover{
+    background-color: #254BDD;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.js:hover{
+    background-color: #EFD81D;
+    cursor: pointer;
 }
 
 .proj button{
     font-family: 'Montserrat', Helvetica, sans-serif;
     font-size: 1em;
-    margin: 16px auto;
+    text-transform: uppercase;
     padding: 8px 32px;
     background-color: rgba(0, 0, 0, 0.0);
     color: #000741;
@@ -255,7 +276,14 @@ main{
     color: #e2e7ff;
 }
 
-
+a .octicon{
+    margin-left: 16px;
+    width: 40px;
+    height: auto;
+    background-color:#000741;
+    border-radius: 50%;
+    vertical-align: -12px;
+}
 
 #sec-ctt{
     height: 100vh;
