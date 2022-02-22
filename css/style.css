@@ -103,10 +103,9 @@ header{
     border-bottom: 4px solid var(--cor-yellow-gold);    
 }
 nav a{
-    margin-top: 32px;
     padding: 8px 16px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 0.8em;
 }
 nav a:hover{
     transition-duration: 0.4s;
@@ -142,7 +141,7 @@ main{
 #sec-ctt h2{
     font-size: 2.5em;
     font-weight: 700;
-    padding: 48px 0px 80px;
+    padding: 32px 0px;
 }
 #sec-intro a{
     box-shadow: none;
@@ -174,7 +173,7 @@ main{
 
 #sec-proj{
     height: 120vh;
-    background-color: #0077b6;
+    background-image: linear-gradient(to right, #4facfe 10%,  #0077b6 100%);
 }
 #sec-in-proj{
     display: flex;
