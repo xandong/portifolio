@@ -1,0 +1,265 @@
+@charset "UTF-8";
+/*
+*/
+:root{
+    --cor-whitesmoke: #cddce4;
+    --cor-yellow-gold: #f9c013;
+    --cor-red-dark: #95190C;
+    --cor-pink: #fe00b3;
+    --cor-black-blue: #000528;
+    --cor-blue: #01249c;
+    --cor-blue-2: #0077b6;
+    --cor-blue-clean: #0f65e8;
+    --cor-blue-bb: #7F96FF;
+    --cor-blue-dark: #000741;
+    --cor-violet: #483D8B; 
+    --cor-purple: #483D8B;
+    --cor-black: #171515;   
+}
+/* Geral */
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    width: 100%;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    background-color: whitesmoke;
+    color: var(--cor-violet);
+   
+}
+nav a{
+    color: var(--cor-violet);
+    text-decoration: none;
+    padding: 8px 16px;
+    box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 12px 0;
+
+}
+nav a:hover{
+    transition-duration: 0.3s;
+    color: var(--cor-yellow-gold);
+}
+h1{
+    font-size: 4em;
+}
+h2{
+    font-size: 2em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+}
+ul{
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 8px;
+}
+hr{
+    border: none;
+}
+nav{
+    margin-right: 48px;
+}
+
+
+
+/* Especificos */
+header{
+    margin: auto;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header{
+    height: 50px;
+}
+#Camada_1{
+    height: 50px;
+    padding: 16px;
+    padding-left: 48px;
+    position: inherit;
+    border-radius: 0 50px 50px 0;
+    fill: var(--cor-violet);
+}
+#Camada_1:hover{
+    transition-duration: 0.2s;
+    background-color:var(--cor-yellow-gold);
+    fill: whitesmoke;
+}
+nav a{
+    margin-top: 32px;
+    padding: 8px 16px;
+}
+nav a:hover{
+    transition-duration: 0.4s;
+    background-color: #f9c013;
+    color: whitesmoke;
+
+}
+
+
+main{
+    width: 100%;
+    margin: auto;
+}
+#sec-intro{
+    min-width: 100%;
+    width: 60%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 120px;
+    text-align: center;
+}
+#sec-intro a{
+    color: var(--cor-violet);
+    transition-duration: 0.3s;
+}
+#sec-intro a:hover{
+    color: var(--cor-yellow-gold);
+}
+
+#sec-intro h2,
+#sec-proj h2,
+#sec-ctt h2{
+    font-size: 2.5em;
+    font-weight: 700;
+    padding: 48px 0px;
+}
+#sec-intro a{
+    box-shadow: none;
+}
+
+
+
+#sec-proj,
+#sec-ctt{
+    color: #cddce4;
+    padding: 48px 0;
+    text-align: center;
+}
+
+#sec-proj a,
+#sec-ctt a{
+    color: #cddce4;
+}
+#sec-ctt ul,
+#sec-proj ul{
+    margin-right: 8px;
+}
+#sec-proj a:hover,
+#sec-ctt a:hover{
+   background-color: var(--cor-whitesmoke);
+   color: var(--cor-blue-dark);
+    
+}
+
+
+
+#sec-proj{
+    height: 120vh;
+    background-color: #0077b6;
+}
+#sec-in-proj{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+.pic-proj{  
+    display: flex;
+
+}
+
+#proj-01,
+#proj-02,
+#proj-03{
+    height: 450px;
+    width: 300px;
+    background-color: #e2e7ff;
+    border-radius: 16px;
+    border: 8px solid #0077b6;
+    transition-duration: 0.4s;
+}
+
+#proj-01:hover,
+#proj-02:hover,
+#proj-03:hover{
+    transition-duration: 0.4s;
+    border-radius: 16px;
+    border: 8px solid rgb(1, 37, 157, 0.8);
+}
+
+
+#pic-proj-01,
+#pic-proj-02,
+#pic-proj-03{
+    margin: 24px auto 0;
+    height: 200px;
+    width: 300px;
+    background-color: #fe00b3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    transition-duration: 0.4s;
+    
+}
+#pic-proj-01:hover,
+#pic-proj-02:hover,
+#pic-proj-03:hover{
+    transition-duration: 0.4s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.proj-in{   
+    color: #000741;
+}
+
+.proj-title{
+    margin: 8px auto;
+}
+.proj-desc{
+    display: flex;
+    margin: auto;
+    width: 250px;
+    height: 100px;
+    background-color: #000528;
+}
+
+.proj button{
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 16px auto;
+    padding: 8px 32px;
+    background-color: rgba(0, 0, 0, 0.0);
+    color: #000741;
+    border: 2px solid #000741;
+    border-radius: 30px;
+}
+.proj button:hover{
+    transition-duration: 0.3s;
+    font-weight: 600;
+    background-color:#000741;
+    color: #e2e7ff;
+}
+
+
+
+#sec-ctt{
+    height: 100vh;
+    background-color:#000741;
+    color: var(--cor-whitesmoke);
+    text-align: center;
+}
