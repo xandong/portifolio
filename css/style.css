@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /*
 */
 :root{
@@ -26,10 +28,8 @@
 }
 body{
     width: 100%;
-    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: whitesmoke;
-    color: var(--cor-violet);
-   
 }
 nav a{
     color: var(--cor-violet);
@@ -43,9 +43,6 @@ nav a:hover{
     transition-duration: 0.3s;
     box-shadow:none;
     color: var(--cor-yellow-gold);
-}
-h1{
-    font-size: 4em;
 }
 h2{
     font-size: 2em;
@@ -79,39 +76,90 @@ button:hover{
 
 /* Especificos */
 header{
-    margin: auto;
     height: 10vh;
     width: 100%;
+    padding: 8px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     box-shadow: 0 0 48px rgb(0, 0, 0, 0.05);
-}
-.header{
-    width: 80%;
 }
 #Camada_1{
     height: 50px;
-    margin-left: 48px;
-    position: inherit;
+    margin-left: 20%;
     fill: var(--cor-violet);
+    transition-duration: 0.4s;
 }
 #Camada_1:hover{
-    transition-duration: 0.2s;
+    transition-duration: 0.4s;
     fill: var(--cor-yellow-gold);
     border-bottom: 4px solid var(--cor-yellow-gold);    
 }
-nav a{
+header li a{
+    color: #483D8B;
+    margin-right: 24px;
     padding: 8px 16px;
-    text-transform: uppercase;
-    font-size: 0.8em;
 }
-nav a:hover{
+header li a:hover{
     transition-duration: 0.4s;
     background-color: #f9c013;
     color: whitesmoke;
 }
+
+
+#navbar-menu{
+    margin: 0;
+    padding: 0;
+}
+.line{
+    width: 24px;
+    height: 2px;
+    background-color: #483D8B;
+    margin: 8px;
+}
+
+
+    body{
+        overflow-x: hidden;
+    }
+    .navbar-responsive{
+        margin-right: 24px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    #navbar-items{
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 200px;
+        height: 25vh;
+        background-color:#fff;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0 0 10px 10px;
+        justify-content: space-around;
+        box-shadow: 0px 0px 6px rgb(0, 0, 0, 0.1);
+        transform: translateX(100%);
+    }
+
+    .navbar-item{
+        margin: auto;
+        padding: 1px 8px;
+        box-shadow: none;
+        border-radius: 0;
+        font-weight: 500;
+    }
+    .navbar-item:hover{
+        transition-duration: 0.2s;
+        font-weight: 800;
+        background-color: rgba(0, 0, 0, 0.0);
+        border-bottom: 2px solid #483D8B;
+        color: #483D8B;
+    }
+    .navbar-responsive{
+        display: block;
+    }
 
 
 
@@ -123,6 +171,11 @@ main{
 
 
 #sec-intro{
+    /*
+        IMAGEM BACKGROUND
+    background: url("diretorio") no repeat center center;
+    background-size: cover;
+    */
     min-width: 100%;
     width: 60%;
     height: 85vh;
@@ -132,12 +185,22 @@ main{
     align-items: center;
     text-align: center;
 }
+#sec-intro h1{
+    margin-top: -80px;
+    font: normal 900 5em 'Inter', sans-serif;
+    letter-spacing: -4px;
+    word-break: keep-all;
+}
 #sec-intro h2{
+    color: #4facfe;
     font-family: monospace;
-    font-size: 2.2em;
+    font-size: 2.4em;
     letter-spacing: 6px;
-    font-weight: 700;
-    text-shadow: 4px 2px 3px rgba(0,0,0,0.15);
+    font-weight: 400;
+    padding-top: 8px;
+    text-shadow: 2px 3px 4px rgba(0,0,0,0.15);
+}
+#sec-intro h2 em{
 }
 #sec-intro a{
     color: var(--cor-violet);
@@ -174,9 +237,10 @@ main{
     text-transform: uppercase;
     padding: 48px 0;
     font-size: 2.0em;
-    letter-spacing: 6px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 4px;
     font-weight: 700;
-    text-shadow: 4px 2px 3px rgba(0,0,0,0.15);
+    text-shadow: 4px 2px 8px rgba(0,0,0,0.15);
 }
 
 
@@ -243,7 +307,7 @@ main{
 .proj-in:hover{
     box-shadow: 2px 3px 3px 2px white;
     border: 2px 4px 4px 2px white;
-    border: 2px 5px 5px 2px white;
+    border: 2px  5px 2px white;
     border: 2px 6px 6px 2px white;
 }
 
