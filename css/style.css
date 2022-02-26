@@ -80,7 +80,7 @@ button:hover{
 /* Especificos */
 header{
     margin: auto;
-    height: 16vh;
+    height: 10vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -114,37 +114,38 @@ nav a:hover{
 }
 
 
+
 main{
     width: 100%;
     margin: auto;
 }
+
+
+
 #sec-intro{
     min-width: 100%;
     width: 60%;
-    height: 90vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+#sec-intro h2{
+    font-family: monospace;
+    font-size: 2.2em;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-shadow: 4px 2px 3px rgba(0,0,0,0.15);
+}
 #sec-intro a{
     color: var(--cor-violet);
     transition-duration: 0.3s;
+    box-shadow: none;
 }
 #sec-intro a:hover{
     color: var(--cor-yellow-gold);
-}
-
-#sec-intro h2,
-#sec-proj h2,
-#sec-ctt h2{
-    font-size: 2.5em;
-    font-weight: 700;
-    padding: 32px 0px;
-}
-#sec-intro a{
-    box-shadow: none;
 }
 
 
@@ -155,7 +156,6 @@ main{
     padding: 48px 0;
     text-align: center;
 }
-
 #sec-proj a,
 #sec-ctt a{
     color: #cddce4;
@@ -165,20 +165,34 @@ main{
     margin-right: 8px;
 }
 #sec-proj a:hover,
-#sec-ctt a:hover{
+#sec-ctt a:hover {
    background-color: var(--cor-whitesmoke);
    color: var(--cor-blue-dark);
-    
+}
+#sec-proj > h2,
+#sec-ctt > h2{
+    text-transform: uppercase;
+    padding: 48px 0;
+    font-size: 2.0em;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-shadow: 4px 2px 3px rgba(0,0,0,0.15);
 }
 
+
+
 #sec-proj{
-    height: 120vh;
     background-image: linear-gradient(to right, #4facfe 10%,  #0077b6 100%);
 }
-#sec-in-proj{
+#projetos{
+    background-color: black;
+}
+#sec-in-proj {
+    min-height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 80px;
 }
@@ -191,7 +205,7 @@ main{
 #proj-03{
     height: 450px;
     width: 300px;
-    background-color: #e2e7ff;
+    background-color: #f4f6ff;
     border-radius: 16px;
     transition-duration: 0.4s;
 }
@@ -224,6 +238,13 @@ main{
 }
 .proj-in{   
     color: #000741;
+    box-shadow: 2px white;
+}
+.proj-in:hover{
+    box-shadow: 2px 3px 3px 2px white;
+    border: 2px 4px 4px 2px white;
+    border: 2px 5px 5px 2px white;
+    border: 2px 6px 6px 2px white;
 }
 
 .proj-desc{
@@ -284,8 +305,10 @@ a .octicon{
     vertical-align: -12px;
 }
 
+
+
 #sec-ctt{
-    height: 100vh;
+    height: 80vh;
     background-color:#000741;
     color: var(--cor-whitesmoke);
     text-align: center;
