@@ -27,6 +27,7 @@
     
 }
 body{
+    overflow-x: hidden;
     width: 100%;
     font-family: 'Inter', sans-serif;
     background-color: whitesmoke;
@@ -109,6 +110,7 @@ header li a:hover{
 
 
 #navbar-menu{
+    overflow: hidden;
     margin: 0;
     padding: 0;
 }
@@ -118,11 +120,6 @@ header li a:hover{
     background-color: #483D8B;
     margin: 8px;
 }
-
-
-    body{
-        overflow-x: hidden;
-    }
     .navbar-responsive{
         margin-right: 24px;
         border-radius: 50%;
@@ -359,17 +356,6 @@ main{
     background-color:#000741;
     color: #e2e7ff;
 }
-
-a .octicon{
-    margin-left: 16px;
-    width: 40px;
-    height: auto;
-    background-color:#000741;
-    border-radius: 50%;
-    vertical-align: -12px;
-}
-
-
 
 #sec-ctt{
     height: 80vh;
