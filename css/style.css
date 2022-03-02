@@ -27,11 +27,12 @@
     
 }
 body{
+    width: 100vw;
     overflow-x: hidden;
-    width: 100%;
     font-family: 'Inter', sans-serif;
     background-color: whitesmoke;
 }
+
 nav a{
     color: var(--cor-violet);
     text-decoration: none;
@@ -45,6 +46,7 @@ nav a:hover{
     box-shadow:none;
     color: var(--cor-yellow-gold);
 }
+
 h2{
     font-size: 2em;
 }
@@ -77,6 +79,7 @@ button:hover{
 
 /* Especificos */
 header{
+    background-color: #000741;
     height: 10vh;
     width: 100%;
     padding: 8px;
@@ -89,7 +92,7 @@ header{
 #Camada_1{
     height: 50px;
     margin-left: 20%;
-    fill: var(--cor-violet);
+    fill: whitesmoke;
     transition-duration: 0.4s;
 }
 #Camada_1:hover{
@@ -97,17 +100,6 @@ header{
     fill: var(--cor-yellow-gold);
     border-bottom: 4px solid var(--cor-yellow-gold);    
 }
-header li a{
-    color: #483D8B;
-    margin-right: 24px;
-    padding: 8px 16px;
-}
-header li a:hover{
-    transition-duration: 0.4s;
-    background-color: #f9c013;
-    color: whitesmoke;
-}
-
 
 #navbar-menu{
     overflow: hidden;
@@ -117,48 +109,44 @@ header li a:hover{
 .line{
     width: 24px;
     height: 2px;
-    background-color: #483D8B;
+    background-color: whitesmoke;
     margin: 8px;
 }
-    .navbar-responsive{
-        margin-right: 24px;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-    #navbar-items{
-        position: absolute;
-        top: 10vh;
-        right: 0;
-        width: 200px;
-        height: 25vh;
-        background-color:#fff;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 0 0 10px 10px;
-        justify-content: space-around;
-        box-shadow: 0px 0px 6px rgb(0, 0, 0, 0.1);
-        transform: translateX(100%);
-    }
 
-    .navbar-item{
-        margin: auto;
-        padding: 1px 8px;
-        box-shadow: none;
-        border-radius: 0;
-        font-weight: 500;
-    }
-    .navbar-item:hover{
-        transition-duration: 0.2s;
-        font-weight: 800;
-        background-color: rgba(0, 0, 0, 0.0);
-        border-bottom: 2px solid #483D8B;
-        color: #483D8B;
-    }
-    .navbar-responsive{
-        display: block;
-    }
+.navbar-responsive{
+    margin-right: 080px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#navbar-items{
+    position: absolute;
+    top: 12vh;
+    right: 0;
+    width: 160px;
+    height: 25vh;
+    background-color:#fff;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    justify-content: space-around;
+    box-shadow: 0px 0px 6px rgb(0, 0, 0, 0.1);
+    transform: translateX(100%);
+}
 
-
+.navbar-item{
+    margin: auto;
+    padding: 1px 8px;
+    box-shadow: none;
+    border-radius: 0;
+    font-weight: 500;
+}
+.navbar-item:hover{
+    transition-duration: 0.2s;
+    font-weight: 800;
+    background-color: rgba(0, 0, 0, 0.0);
+    border-bottom: 2px solid #483D8B;
+    color: #483D8B;
+}
 
 main{
     width: 100%;
@@ -170,9 +158,10 @@ main{
 #sec-intro{
     /*
         IMAGEM BACKGROUND
-    background: url("diretorio") no repeat center center;
-    background-size: cover;
     */
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-size: cover;
     min-width: 100%;
     width: 60%;
     height: 85vh;
@@ -181,6 +170,7 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: whitesmoke;
 }
 #sec-intro h1{
     margin-top: -80px;
@@ -188,24 +178,27 @@ main{
     letter-spacing: -4px;
     word-break: keep-all;
 }
+
 #sec-intro h2{
-    color: #4facfe;
+    color: whitesmoke;
     font-family: monospace;
     font-size: 2.4em;
     letter-spacing: 6px;
-    font-weight: 400;
+    font-weight: 600;
     padding-top: 8px;
-    text-shadow: 2px 3px 4px rgba(0,0,0,0.15);
+    text-shadow: 2px 3px 6px rgba(0,0,0,0.5);
 }
-#sec-intro h2 em{
-}
+
 #sec-intro a{
-    color: var(--cor-violet);
-    transition-duration: 0.3s;
+    color: whitesmoke;
+    line-height: -500px;
+    transition-duration: 1s;
     box-shadow: none;
 }
 #sec-intro a:hover{
     color: var(--cor-yellow-gold);
+    text-shadow: 2px 3px 6px rgba(0,0,0,0.3);
+    text-decoration: underline;
 }
 
 
@@ -299,13 +292,6 @@ main{
 }
 .proj-in{   
     color: #000741;
-    box-shadow: 2px white;
-}
-.proj-in:hover{
-    box-shadow: 2px 3px 3px 2px white;
-    border: 2px 4px 4px 2px white;
-    border: 2px  5px 2px white;
-    border: 2px 6px 6px 2px white;
 }
 
 .proj-desc{
