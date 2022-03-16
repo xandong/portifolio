@@ -19,10 +19,9 @@ click = () => {
     }
     else {
         stts = false;
-        document.body.style.overflowX = "hidden";
         navItems.style.transform = "translateX(100%)";
         navItems.style.opacity = "0";
-        navItems.style.overflowX = "hidden"
+        navItems.style.overflow = "hidden"
         line1.style.transform = "rotate(0deg) translate(0, 0)";
         line2.style.opacity = "100%";
         line3.style.transform = "rotate(0deg) translate(0, 0)";
