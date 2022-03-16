@@ -1,4 +1,4 @@
-
+const body = document.getElementsByTagName("body")
 const navMenu = document.querySelector('#vMenu')
 const navItems = document.querySelector("#navbar-items");
 const burguer = document.querySelector(".navbar-responsive");
@@ -19,8 +19,10 @@ click = () => {
     }
     else {
         stts = false;
+        document.body.style.overflowX = "hidden";
         navItems.style.transform = "translateX(100%)";
         navItems.style.opacity = "0";
+        navItems.style.overflowX = "hidden"
         line1.style.transform = "rotate(0deg) translate(0, 0)";
         line2.style.opacity = "100%";
         line3.style.transform = "rotate(0deg) translate(0, 0)";
